@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet User</title>
+    <script src="LAB10.js"></script>
+    <link rel="stylesheet" href="LAB10.css">
+</head>
+<body>
+    
+    <input type="text" id="input">
+    <button onclick="greetUser(document.getElementById('input').value)">save</button>
+    <div id="output"></div>
+
+    <p id="message">this is the original text.</p>
+    <button onclick="changeText()">click me</button>
+
+    <br><br>
+
+    <input type="text" id="firstName" placeholder="Enter first name">
+    <input type="text" id="lastName" placeholder="Enter last name">
+    <button onclick="showFullName()">show full name</button>
+    <div id="result"></div>
+    
+    <br><br>
+
+    <h1 id="title">Default Title</h1>
+    <input type="text" id="inputField" placeholder="Enter new title">
+    <button onclick="updateTitle()">update title</button>
+    
+    <br><br>
+
+    <input type="text" id="string1" placeholder="string1">
+    <input type="text" id="string2" placeholder="string2">
+    <button onclick="concatenateStrings()">concatenate</button>
+    <p id="combinedText"></p>
+
+<button id="changeBackground">change background</button>
+<div id="colorBox"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('changeBackground');
+        const colorBox = document.getElementById('colorBox');
+
+        button.addEventListener('click', function () {
+            colorBox.style.backgroundColor = 'blue';
+        });
+    });
+</script>
+
+</body>
+</html>
+   
